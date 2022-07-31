@@ -94,7 +94,7 @@ namespace Hzdtf.Consul.Extensions.Common
                 addresses.Add(add);
             }
 
-            Console.WriteLine($"{DateTime.Now.ToFullFixedDateTime()} 服务名:{serviceName},consol远程获取的地址列表:{addresses.ToJsonString()}");
+            Console.WriteLine($"{DateTimeExtensions.Now.ToFullFixedDateTime()} 服务名:{serviceName},consol远程获取的地址列表:{addresses.ToJsonString()}");
 
             return addresses.ToArray();
         }
