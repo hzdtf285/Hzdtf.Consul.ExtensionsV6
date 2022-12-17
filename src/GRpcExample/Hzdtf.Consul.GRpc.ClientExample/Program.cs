@@ -30,7 +30,7 @@ namespace Hzdtf.Consul.GRpc.ClientExample
             for (var i = 0; i < 1000; i++)
             {
                 var url = unityServicesBuilder.BuilderAsync("GRpcServiceExampleA").Result;
-                GRpcChannelUtil.CreateChannel(url, (channel, header) =>
+                GRpcExtensions.CreateChannel(url, (channel, header) =>
                 {
                     var client = new Greeter.GreeterClient(channel);
                     var res = client.SayHello(new HelloRequest()

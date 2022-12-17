@@ -40,7 +40,7 @@ namespace Hzdtf.Consul.GRpc.ClientWebExample.Controllers
                 req.Name = "黄华英" + i;
                 try
                 {
-                    GRpcChannelUtil.GetGRpcClientFormStrategy<GreeterClient>("GRpcServiceExampleA", (channel) =>
+                    GRpcExtensions.GetGRpcClientFormStrategy<GreeterClient>("GRpcServiceExampleA", (channel) =>
                     {
                         kv.Key = channel.Target;
                         return new GreeterClient(channel);
@@ -56,7 +56,7 @@ namespace Hzdtf.Consul.GRpc.ClientWebExample.Controllers
                 }
                 list.Add(kv);
 
-                Console.WriteLine($"{DateTimeExtensions.Now.ToFullFixedDateTime()} 请求后结果:" + kv.ToJsonString());
+                Console.WriteLine($"{DateTimeExtensions.CstNow().ToFullFixedDateTime()} 请求后结果:" + kv.ToJsonString());
 
                 Thread.Sleep(1000);
             }
