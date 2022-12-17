@@ -4208,12 +4208,12 @@
             登录ID
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Model.BasicUserInfo`1.LogonPass_Name">
+        <member name="F:Hzdtf.Utility.Model.BasicUserInfo`1.Password_Name">
             <summary>
             密码_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.BasicUserInfo`1.LogonPass">
+        <member name="P:Hzdtf.Utility.Model.BasicUserInfo`1.Password">
             <summary>
             密码
             </summary>
@@ -4238,22 +4238,22 @@
             系统内置
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Model.BasicUserInfo`1.LogonDateTime_Name">
+        <member name="F:Hzdtf.Utility.Model.BasicUserInfo`1.LoginTime_Name">
             <summary>
             登录时间_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.BasicUserInfo`1.LogonDateTime">
+        <member name="P:Hzdtf.Utility.Model.BasicUserInfo`1.LoginTime">
             <summary>
             登录时间
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Model.BasicUserInfo`1.LogonClientIP_Name">
+        <member name="F:Hzdtf.Utility.Model.BasicUserInfo`1.LoginClientIP_Name">
             <summary>
             登录IP_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.BasicUserInfo`1.LogonClientIP">
+        <member name="P:Hzdtf.Utility.Model.BasicUserInfo`1.LoginClientIP">
             <summary>
             登录IP
             </summary>
@@ -4278,26 +4278,26 @@
             退出登录时间
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Model.BasicUserInfo`1.MerchantId_Name">
+        <member name="F:Hzdtf.Utility.Model.BasicUserInfo`1.TeantId_Name">
             <summary>
-            商户ID_名称
-            一般情况没有，特殊情况下有用，如SAAS中的商户
+            租赁ID_名称
+            一般情况没有，特殊情况下有用，如SAAS中的租赁
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.BasicUserInfo`1.MerchantID">
+        <member name="P:Hzdtf.Utility.Model.BasicUserInfo`1.TeantId">
             <summary>
-            商户ID
-            一般情况没有，特殊情况下有用，如SAAS中的商户
+            租赁ID
+            一般情况没有，特殊情况下有用，如SAAS中的租赁
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Model.BasicUserInfo`1.MerchantIdString_Name">
+        <member name="F:Hzdtf.Utility.Model.BasicUserInfo`1.TeantIdString_Name">
             <summary>
-            商户ID字符串_名称
+            租赁ID字符串_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.BasicUserInfo`1.MerchantIDString">
+        <member name="P:Hzdtf.Utility.Model.BasicUserInfo`1.TeantIdString">
             <summary>
-            商户ID字符串，如果ID类型为长整型，则在JS前端使用此属性为字符串类型，因为JS中长整型会丢失精度
+            租赁ID字符串，如果ID类型为长整型，则在JS前端使用此属性为字符串类型，因为JS中长整型会丢失精度
             </summary>
         </member>
         <member name="T:Hzdtf.Utility.Model.BasicUserInfo">
@@ -5043,12 +5043,12 @@
             登录信息
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.LoginInfo.LoginID">
+        <member name="P:Hzdtf.Utility.Model.LoginInfo.LoginId">
             <summary>
             登录ID
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.LoginInfo.LogonPass">
+        <member name="P:Hzdtf.Utility.Model.LoginInfo.Password">
             <summary>
             密码
             </summary>
@@ -5204,22 +5204,22 @@
             </summary>
             <typeparam name="IdT">ID类型</typeparam>
         </member>
-        <member name="F:Hzdtf.Utility.Model.PersonTimeInfo`1.CreaterID_Name">
+        <member name="F:Hzdtf.Utility.Model.PersonTimeInfo`1.CreaterId_Name">
             <summary>
             创建人ID_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.PersonTimeInfo`1.CreaterID">
+        <member name="P:Hzdtf.Utility.Model.PersonTimeInfo`1.CreaterId">
             <summary>
             创建人ID
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Model.PersonTimeInfo`1.CreaterIDString_Name">
+        <member name="F:Hzdtf.Utility.Model.PersonTimeInfo`1.CreaterIdString_Name">
             <summary>
             创建人ID字符串_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.PersonTimeInfo`1.CreaterIDString">
+        <member name="P:Hzdtf.Utility.Model.PersonTimeInfo`1.CreaterIdString">
             <summary>
             创建人ID字符串，如果ID类型为长整型，则在JS前端使用此属性为字符串类型，因为JS中长整型会丢失精度
             </summary>
@@ -5239,17 +5239,17 @@
             修改人ID_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.PersonTimeInfo`1.ModifierID">
+        <member name="P:Hzdtf.Utility.Model.PersonTimeInfo`1.ModifierId">
             <summary>
             修改人ID
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Model.PersonTimeInfo`1.ModifierIDString_Name">
+        <member name="F:Hzdtf.Utility.Model.PersonTimeInfo`1.ModifierIdString_Name">
             <summary>
             修改人ID字符串_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.PersonTimeInfo`1.ModifierIDString">
+        <member name="P:Hzdtf.Utility.Model.PersonTimeInfo`1.ModifierIdString">
             <summary>
             修改人ID字符串，如果ID类型为长整型，则在JS前端使用此属性为字符串类型，因为JS中长整型会丢失精度
             </summary>
@@ -5270,30 +5270,30 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="T:Hzdtf.Utility.Model.PersonTimeMerchantInfo`1">
+        <member name="T:Hzdtf.Utility.Model.PersonTimeTeantInfo`1">
             <summary>
-            带有人时间商户信息
+            带有人时间租赁信息
             </summary>
             <typeparam name="IdT">ID类型</typeparam>
         </member>
-        <member name="F:Hzdtf.Utility.Model.PersonTimeMerchantInfo`1.MerchantID_Name">
+        <member name="F:Hzdtf.Utility.Model.PersonTimeTeantInfo`1.TeantId_Name">
             <summary>
-            商户ID_名称
+            租赁ID_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.PersonTimeMerchantInfo`1.MerchantID">
+        <member name="P:Hzdtf.Utility.Model.PersonTimeTeantInfo`1.TeantId">
             <summary>
-            商户ID
+            租赁ID
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Model.PersonTimeMerchantInfo`1.MerchantIDString_Name">
+        <member name="F:Hzdtf.Utility.Model.PersonTimeTeantInfo`1.TeantIdString_Name">
             <summary>
-            商户ID字符串_名称
+            租赁ID字符串_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.PersonTimeMerchantInfo`1.MerchantIdString">
+        <member name="P:Hzdtf.Utility.Model.PersonTimeTeantInfo`1.TeantIdString">
             <summary>
-            商户ID字符串，如果ID类型为长整型，则在JS前端使用此属性为字符串类型，因为JS中长整型会丢失精度
+            租赁ID字符串，如果ID类型为长整型，则在JS前端使用此属性为字符串类型，因为JS中长整型会丢失精度
             </summary>
         </member>
         <member name="T:Hzdtf.Utility.Model.SimpleInfoExtensions">
@@ -5736,20 +5736,20 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="T:Hzdtf.Utility.Model.SimpleMerchantInfo`1">
+        <member name="T:Hzdtf.Utility.Model.SimpleTeantInfo`1">
             <summary>
-            简单商户信息
+            简单租赁信息
             </summary>
             <typeparam name="IdT">ID类型</typeparam>
         </member>
-        <member name="F:Hzdtf.Utility.Model.SimpleMerchantInfo`1.MerchantID_Name">
+        <member name="F:Hzdtf.Utility.Model.SimpleTeantInfo`1.TeantId_Name">
             <summary>
-            商户ID_名称
+            租赁ID_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.SimpleMerchantInfo`1.MerchantID">
+        <member name="P:Hzdtf.Utility.Model.SimpleTeantInfo`1.TeantId">
             <summary>
-            商户ID
+            租赁ID
             </summary>
         </member>
         <member name="T:Hzdtf.Utility.Model.TimeInfo`1">
@@ -5759,22 +5759,22 @@
             </summary>
             <typeparam name="IdT">ID类型</typeparam>
         </member>
-        <member name="F:Hzdtf.Utility.Model.TimeInfo`1.CreateDateTime_Name">
+        <member name="F:Hzdtf.Utility.Model.TimeInfo`1.CreateTime_Name">
             <summary>
             创建时间_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.TimeInfo`1.CreateDateTime">
+        <member name="P:Hzdtf.Utility.Model.TimeInfo`1.CreateTime">
             <summary>
             创建时间
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.Model.TimeInfo`1.ModifyDateTime_Name">
+        <member name="F:Hzdtf.Utility.Model.TimeInfo`1.ModifyTime_Name">
             <summary>
             修改时间_名称
             </summary>
         </member>
-        <member name="P:Hzdtf.Utility.Model.TimeInfo`1.ModifyDateTime">
+        <member name="P:Hzdtf.Utility.Model.TimeInfo`1.ModifyTime">
             <summary>
             修改时间
             </summary>
@@ -7734,172 +7734,172 @@
             <param name="comData">通用数据</param>
             <returns>返回信息 key：菜单编码，value：功能编码数组</returns>
         </member>
-        <member name="T:Hzdtf.Utility.UserPermission.Merchant.IMerchantUserMenuPermission`1">
+        <member name="T:Hzdtf.Utility.UserPermission.Teant.ITeantUserMenuPermission`1">
             <summary>
-            商户用户菜单权限接口
+            租赁用户菜单权限接口
             @ 黄振东
             </summary>
             <typeparam name="IdT">ID类型</typeparam>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.IMerchantUserMenuPermission`1.UserHavePermission(`0,`0,System.String,System.String[],Hzdtf.Utility.Model.CommonUseData)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.ITeantUserMenuPermission`1.UserHavePermission(`0,`0,System.String,System.String[],Hzdtf.Utility.Model.CommonUseData)">
             <summary>
             用户是否拥有权限
             </summary>
-            <param name="merchantId">商户ID</param>
+            <param name="teantId">租赁ID</param>
             <param name="userId">用户ID</param>
             <param name="menuCode">菜单编码</param>
             <param name="funCodes">功能编码数组</param>
             <param name="comData">通用数据</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.IMerchantUserMenuPermission`1.GetHavePermissionMenuFunCodes(`0,`0,Hzdtf.Utility.Model.CommonUseData)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.ITeantUserMenuPermission`1.GetHavePermissionMenuFunCodes(`0,`0,Hzdtf.Utility.Model.CommonUseData)">
             <summary>
             根据用户ID获取拥有权限的菜单功能编码字典
             </summary>
-            <param name="merchantId">商户ID</param>
+            <param name="teantId">租赁ID</param>
             <param name="userId">用户ID</param>
             <param name="comData">通用数据</param>
             <returns>返回信息 key：菜单编码，value：功能编码数组</returns>
         </member>
-        <member name="T:Hzdtf.Utility.UserPermission.Merchant.IMerchantUserMenuPermissionCache`1">
+        <member name="T:Hzdtf.Utility.UserPermission.Teant.ITeantUserMenuPermissionCache`1">
             <summary>
-            商户用户菜单权限缓存接口
+            租赁用户菜单权限缓存接口
             @ 黄振东
             </summary>
             <typeparam name="IdT">用户类型</typeparam>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.IMerchantUserMenuPermissionCache`1.InitCache(`0,`0,Hzdtf.Utility.Model.CommonUseData)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.ITeantUserMenuPermissionCache`1.InitCache(`0,`0,Hzdtf.Utility.Model.CommonUseData)">
             <summary>
             初始化缓存
             </summary>
-            <param name="merchantId">商户ID</param>
+            <param name="teantId">租赁ID</param>
             <param name="userId">用户ID</param>
             <param name="comData">通用数据</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.IMerchantUserMenuPermissionCache`1.GetWithTSNotAccessKeys(System.TimeSpan)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.ITeantUserMenuPermissionCache`1.GetWithTSNotAccessKeys(System.TimeSpan)">
             <summary>
             获取时间范围内没有访问的键数组
             </summary>
             <param name="timeSpan">时间范围</param>
             <returns>时间范围内没有访问的键数组</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.IMerchantUserMenuPermissionCache`1.RemoveWithTSNotAccess(System.TimeSpan)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.ITeantUserMenuPermissionCache`1.RemoveWithTSNotAccess(System.TimeSpan)">
             <summary>
             移除时间范围内没有访问的用户
             </summary>
             <param name="timeSpan">时间范围</param>
             <returns>是否移除成功</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.IMerchantUserMenuPermissionCache`1.RemoveCache(`0,`0)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.ITeantUserMenuPermissionCache`1.RemoveCache(`0,`0)">
             <summary>
-            根据商户ID和用户ID移除缓存
+            根据租赁ID和用户ID移除缓存
             </summary>
-            <param name="merchantId">商户ID</param>
+            <param name="teantId">租赁ID</param>
             <param name="userId">用户ID</param>
             <returns>是否移除成功</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.IMerchantUserMenuPermissionCache`1.RemoveCache(`0,`0[])">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.ITeantUserMenuPermissionCache`1.RemoveCache(`0,`0[])">
             <summary>
-            根据商户ID和用户ID移除缓存
+            根据租赁ID和用户ID移除缓存
             </summary>
-            <param name="merchantId">商户ID</param>
+            <param name="teantId">租赁ID</param>
             <param name="userIds">用户ID数组</param>
             <returns>是否移除成功</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.IMerchantUserMenuPermissionCache`1.RemoveCache(Hzdtf.Utility.Model.KeyValueInfo{`0,`0}[])">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.ITeantUserMenuPermissionCache`1.RemoveCache(Hzdtf.Utility.Model.KeyValueInfo{`0,`0}[])">
             <summary>
-            根据商户ID和用户ID移除缓存
+            根据租赁ID和用户ID移除缓存
             </summary>
-            <param name="merchantIdMapUserIds">商户ID映射用户ID，key：商户ID，value：用户ID</param>
+            <param name="teantIdMapUserIds">租赁ID映射用户ID，key：租赁ID，value：用户ID</param>
             <returns>是否移除成功</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.IMerchantUserMenuPermissionCache`1.ClearCache(`0)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.ITeantUserMenuPermissionCache`1.ClearCache(`0)">
             <summary>
-            根据商户ID清空缓存
+            根据租赁ID清空缓存
             </summary>
-            <param name="merchantId">商户ID</param>
+            <param name="teantId">租赁ID</param>
             <returns>是否清空成功</returns>
         </member>
-        <member name="T:Hzdtf.Utility.UserPermission.Merchant.IMerchantUserMenuReader`1">
+        <member name="T:Hzdtf.Utility.UserPermission.Teant.ITeantUserMenuReader`1">
             <summary>
-            商户用户菜单读取接口
+            租赁用户菜单读取接口
             @ 黄振东
             </summary>
             <typeparam name="IdT">ID类型</typeparam>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.IMerchantUserMenuReader`1.GetHavePermissionMenuFunCodes(`0,`0,Hzdtf.Utility.Model.CommonUseData)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.ITeantUserMenuReader`1.GetHavePermissionMenuFunCodes(`0,`0,Hzdtf.Utility.Model.CommonUseData)">
             <summary>
             根据用户ID获取拥有权限的菜单功能编码字典
             </summary>
-            <param name="merchantId">商户ID</param>
+            <param name="teantId">租赁ID</param>
             <param name="userId">用户ID</param>
             <param name="comData">通用数据</param>
             <returns>返回信息 key：菜单编码，value：功能编码数组</returns>
         </member>
-        <member name="T:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1">
+        <member name="T:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1">
             <summary>
-            商户用户菜单本地缓存
+            租赁用户菜单本地缓存
             @ 黄振东
             </summary>
             <typeparam name="IdT">ID类型</typeparam>
         </member>
-        <member name="F:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.dicCache">
+        <member name="F:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.dicCache">
             <summary>
             字典缓存
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.dicLastAccessTime">
+        <member name="F:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.dicLastAccessTime">
             <summary>
             最后一次访问时间字典
             </summary>
         </member>
-        <member name="F:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.merchantIdUserMenuReader">
+        <member name="F:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.teantIdUserMenuReader">
             <summary>
-            商户用户菜单读取
+            租赁用户菜单读取
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.#ctor(Hzdtf.Utility.UserPermission.Merchant.IMerchantUserMenuReader{`0})">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.#ctor(Hzdtf.Utility.UserPermission.Teant.ITeantUserMenuReader{`0})">
             <summary>
             构造方法
             </summary>
-            <param name="merchantIdUserMenuReader">商户用户菜单读取</param>
+            <param name="teantIdUserMenuReader">租赁用户菜单读取</param>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.UserHavePermission(`0,`0,System.String,System.String[],Hzdtf.Utility.Model.CommonUseData)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.UserHavePermission(`0,`0,System.String,System.String[],Hzdtf.Utility.Model.CommonUseData)">
             <summary>
             用户是否拥有权限
             </summary>
-            <param name="merchantId">商户ID</param>
+            <param name="teantId">租赁ID</param>
             <param name="userId">用户ID</param>
             <param name="menuCode">菜单编码</param>
             <param name="funCodes">功能编码数组</param>
             <param name="comData">通用数据</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.GetHavePermissionMenuFunCodes(`0,`0,Hzdtf.Utility.Model.CommonUseData)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.GetHavePermissionMenuFunCodes(`0,`0,Hzdtf.Utility.Model.CommonUseData)">
             <summary>
             根据用户ID获取拥有权限的菜单功能编码字典
             </summary>
-            <param name="merchantId">商户ID</param>
+            <param name="teantId">租赁ID</param>
             <param name="userId">用户ID</param>
             <param name="comData">通用数据</param>
             <returns>返回信息 key：菜单编码，value：功能编码数组</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.GetWithTSNotAccessKeys(System.TimeSpan)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.GetWithTSNotAccessKeys(System.TimeSpan)">
             <summary>
             获取时间范围内没有访问的键数组
             </summary>
             <param name="timeSpan">时间范围</param>
             <returns>时间范围内没有访问的键数组</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.RemoveWithTSNotAccess(System.TimeSpan)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.RemoveWithTSNotAccess(System.TimeSpan)">
             <summary>
             移除时间范围内没有访问的用户
             </summary>
             <param name="timeSpan">时间范围</param>
             <returns>是否移除成功</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.Add(System.String,System.Collections.Generic.IDictionary{System.String,System.String[]})">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.Add(System.String,System.Collections.Generic.IDictionary{System.String,System.String[]})">
             <summary>
             添加
             </summary>
@@ -7907,75 +7907,75 @@
             <param name="value">值</param>
             <returns>是否添加成功</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.InitCache(`0,`0,Hzdtf.Utility.Model.CommonUseData)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.InitCache(`0,`0,Hzdtf.Utility.Model.CommonUseData)">
             <summary>
             初始化缓存
             </summary>
-            <param name="merchantId">商户ID</param>
+            <param name="teantId">租赁ID</param>
             <param name="userId">用户ID</param>
             <param name="comData">通用数据</param>
             <returns>返回信息</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.RemoveCache(`0,`0)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.RemoveCache(`0,`0)">
             <summary>
-            根据商户ID和用户ID移除缓存
+            根据租赁ID和用户ID移除缓存
             </summary>
-            <param name="merchantId">商户ID</param>
+            <param name="teantId">租赁ID</param>
             <param name="userId">用户ID</param>
             <returns>是否移除成功</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.RemoveCache(`0,`0[])">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.RemoveCache(`0,`0[])">
             <summary>
-            根据商户ID和用户ID移除缓存
+            根据租赁ID和用户ID移除缓存
             </summary>
-            <param name="merchantId">商户ID</param>
+            <param name="teantId">租赁ID</param>
             <param name="userIds">用户ID数组</param>
             <returns>是否移除成功</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.RemoveCache(Hzdtf.Utility.Model.KeyValueInfo{`0,`0}[])">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.RemoveCache(Hzdtf.Utility.Model.KeyValueInfo{`0,`0}[])">
             <summary>
-            根据商户ID和用户ID移除缓存
+            根据租赁ID和用户ID移除缓存
             </summary>
-            <param name="merchantIdMapUserIds">商户ID映射用户ID，key：商户ID，value：用户ID</param>
+            <param name="teantIdMapUserIds">租赁ID映射用户ID，key：租赁ID，value：用户ID</param>
             <returns>是否移除成功</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.ClearCache(`0)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.ClearCache(`0)">
             <summary>
-            根据商户ID清空缓存
+            根据租赁ID清空缓存
             </summary>
-            <param name="merchantId">商户ID</param>
+            <param name="teantId">租赁ID</param>
             <returns>是否清空成功</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.Remove(System.String)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.Remove(System.String)">
             <summary>
             移除键
             </summary>
             <param name="key">键</param>
             <returns>是否移除成功</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.Remove(System.String[])">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.Remove(System.String[])">
             <summary>
             移除键数组
             </summary>
             <param name="keys">键数组</param>
             <returns>是否移除成功</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.Clear">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.Clear">
             <summary>
             清空
             </summary>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.GetCache">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.GetCache">
             <summary>
             获取缓存
             </summary>
             <returns>缓存</returns>
         </member>
-        <member name="M:Hzdtf.Utility.UserPermission.Merchant.MerchantUserMenuLocalCache`1.GetKey(`0,`0)">
+        <member name="M:Hzdtf.Utility.UserPermission.Teant.TeantUserMenuLocalCache`1.GetKey(`0,`0)">
             <summary>
             获取键
             </summary>
-            <param name="merchantId">商户ID</param>
+            <param name="teantId">租赁ID</param>
             <param name="userId">用户ID</param>
             <returns>键</returns>
         </member>
@@ -10477,7 +10477,7 @@
             <param name="instant">片刻对象</param>
             <returns>CST日期时间</returns>
         </member>
-        <member name="M:System.DateTimeExtensions.CstNow">
+        <member name="P:System.DateTimeExtensions.Now">
             <summary>
             获取CST当前日期时间（统一的日期时间，默认为上海时区）
             </summary>

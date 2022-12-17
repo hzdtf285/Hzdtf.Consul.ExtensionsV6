@@ -56,7 +56,7 @@ namespace Hzdtf.Consul.GRpc.ClientWebExample.Controllers
                 }
                 list.Add(kv);
 
-                Console.WriteLine($"{DateTimeExtensions.CstNow().ToFullFixedDateTime()} 请求后结果:" + kv.ToJsonString());
+                Console.WriteLine($"{DateTimeExtensions.Now.ToFullFixedDateTime()} 请求后结果:" + kv.ToJsonString());
 
                 Thread.Sleep(1000);
             }
