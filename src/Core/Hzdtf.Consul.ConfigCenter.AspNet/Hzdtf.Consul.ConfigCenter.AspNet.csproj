@@ -19,7 +19,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Winton.Extensions.Configuration.Consul" Version="3.2.0" />
+    <PackageReference Include="Winton.Extensions.Configuration.Consul" Version="3.3.0" />
   </ItemGroup>
 
   <ItemGroup>
