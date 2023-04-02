@@ -10,6 +10,7 @@ using System;
 using System.Linq;
 using System.Text;
 using Hzdtf.Consul.Extensions.GRpc;
+using Microsoft.Extensions.Hosting;
 
 namespace Microsoft.AspNetCore.Builder
 {
@@ -23,16 +24,25 @@ namespace Microsoft.AspNetCore.Builder
         /// 使用GRpc注册Consul
         /// </summary>
         /// <param name="app">应用生成器</param>
+        /// <param name="lifetime">生命周期</param>
+        /// <param name="getLocalServiceAddress">获取本地服务地址回调</param>
         /// <returns>应用生成器</returns>
-        public static IApplicationBuilder UseGRpcRegisterConsul(this IApplicationBuilder app)
+        public static IApplicationBuilder UseGRpcRegisterConsul(this IApplicationBuilder app, IHostApplicationLifetime lifetime, Func<string, string[], string> getLocalServiceAddress = null)
         {
             // 获取consul配置对象
-            var consulConfig = app.ApplicationServices.GetRequiredService<IOptions<ConsulOptions>>().Value;
+            var consulConfig = app.ApplicationServices.GetRequiredService<IOptions<ConsulOptionsGrpc>>().Value;
 
             // 获取本服务的地址，如果不为空，则直接取。否则取配置选项里的服务地址
             if (string.IsNullOrWhiteSpace(consulConfig.ServiceAddress))
             {
-                consulConfig.ServiceAddress = NetworkUtil.FilterUrl(app.ApplicationServices.GetService<IServerAddressesFeature>().Addresses.FirstOrDefault());
+                if (getLocalServiceAddress == null)
+                {
+                    consulConfig.ServiceAddress = NetworkUtil.FilterUrl(app.ApplicationServices.GetService<IServerAddressesFeature>().Addresses.FirstOrDefault());
+                }
+                else
+                {
+                    consulConfig.ServiceAddress = NetworkUtil.FilterUrl(getLocalServiceAddress(consulConfig.ServiceName, consulConfig.Tags));
+                }
                 if (string.IsNullOrWhiteSpace(consulConfig.ServiceAddress))
                 {
                     throw new ArgumentNullException("服务地址不能为空");
@@ -49,8 +59,13 @@ namespace Microsoft.AspNetCore.Builder
                 GRPCUseTLS = string.Compare(serviceUri.Scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase) == 0,
                 Timeout = TimeSpan.FromSeconds(consulConfig.ServiceCheck.Timeout),                
             };
-            ConsulGRpcInner.ConsulBuilder.AddHealthCheck(agentCheck)
+
+            lifetime.ApplicationStarted.Register(() =>
+            {
+                ConsulGRpcInner.ConsulBuilder.AddHealthCheck(agentCheck)
                          .RegisterService(consulConfig.ServiceName, serviceUri.Host, serviceUri.Port, consulConfig.Tags);
+            });
+            
 
             return app;
         }

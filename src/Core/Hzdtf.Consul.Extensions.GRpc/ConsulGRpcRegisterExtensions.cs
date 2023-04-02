@@ -21,13 +21,13 @@ namespace Microsoft.Extensions.DependencyInjection
         /// 添加GRpc注册Consul
         /// </summary>
         /// <param name="services">服务</param>
-        /// <param name="configJsonFilePath">配置JSON文件路径。如果传入为null，则默认为Config/consulConfig.json</param>
+        /// <param name="configJsonFilePath">配置JSON文件路径。如果传入为null，则默认为Config/consulConfigGRpc.json</param>
         /// <returns>服务</returns>
-        public static IServiceCollection AddGRpcRegisterConsul(this IServiceCollection services, string configJsonFilePath = "Config/consulConfig.json")
+        public static IServiceCollection AddGRpcRegisterConsul(this IServiceCollection services, string configJsonFilePath = "Config/consulConfigGRpc.json")
         {
             // 将consul配置文件配置到服务里
             var config = new ConfigurationBuilder().AddJsonFile(configJsonFilePath).Build();
-            services.Configure<ConsulOptions>(config);
+            services.Configure<ConsulOptionsGrpc>(config);
 
             // 添加一个能获取本服务地址的服务
             services.AddSingleton(serviceProvider =>
@@ -37,7 +37,7 @@ namespace Microsoft.Extensions.DependencyInjection
             });
 
             // 从JSON文件里解析对象
-            var consulConfig = configJsonFilePath.ToJsonObjectFromFile<ConsulOptions>();
+            var consulConfig = configJsonFilePath.ToJsonObjectFromFile<ConsulOptionsGrpc>();
             if (consulConfig == null)
             {
                 throw new ArgumentNullException("json文件内容反序列化ConsulOptions对象为空");

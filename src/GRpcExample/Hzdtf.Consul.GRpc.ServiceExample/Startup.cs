@@ -21,7 +21,7 @@ namespace Hzdtf.Consul.GRpc.ServiceExample
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IHostApplicationLifetime lifetime)
         {
             if (env.IsDevelopment())
             {
@@ -29,7 +29,7 @@ namespace Hzdtf.Consul.GRpc.ServiceExample
             }
 
             app.UseRouting();
-            app.UseGRpcRegisterConsul();
+            app.UseGRpcRegisterConsul(lifetime);
 
             app.UseEndpoints(endpoints =>
             {

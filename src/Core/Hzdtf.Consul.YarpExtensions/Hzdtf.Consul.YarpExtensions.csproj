@@ -2,18 +2,23 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Company>Hzdtd</Company>
+    <Authors>黄振东</Authors>
+    <Product>Consul Yarp扩展类库</Product>
+    <Description>Consul Yarp扩展类库，用于.net6以上</Description>
+    <OutputType>Library</OutputType>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Grpc.Core.Api" Version="2.52.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.10" NoWarn="NU1605" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="6.0.10" NoWarn="NU1605" />
     <PackageReference Include="NodaTime" Version="3.1.9" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Yarp.ReverseProxy" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Hzdtf.Consul.ConfigCenter.AspNet\Hzdtf.Consul.ConfigCenter.AspNet.csproj" />
+    <ProjectReference Include="..\Hzdtf.Consul.ConfigCenter.AspNet\Hzdtf.Consul.ConfigCenter.AspNet.csproj" />
+    <ProjectReference Include="..\Hzdtf.Consul.Extensions.AspNet\Hzdtf.Consul.Extensions.AspNet.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,9 +33,6 @@
     </Reference>
     <Reference Include="Hzdtf.Utility.AspNet">
       <HintPath>..\..\Library\Hzdtf.Utility.AspNet.dll</HintPath>
-    </Reference>
-    <Reference Include="MessagePack.Annotations">
-      <HintPath>..\..\Library\MessagePack.Annotations.dll</HintPath>
     </Reference>
   </ItemGroup>
 

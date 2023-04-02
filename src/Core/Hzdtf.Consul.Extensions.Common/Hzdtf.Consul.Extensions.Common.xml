@@ -86,28 +86,47 @@
             间隔时间（单位：秒）
             </summary>
         </member>
+        <member name="T:Hzdtf.Consul.Extensions.Common.ConsulOptionsGrpc">
+            <summary>
+            Consul选项配置Grpc
+            @ 黄振东
+            </summary>
+        </member>
         <member name="T:Hzdtf.Consul.Extensions.Common.ConsulRegisterUtil">
             <summary>
             Consul注册工具类
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Hzdtf.Consul.Extensions.Common.ConsulRegisterUtil.CreateConsulClientRegister(System.String,System.Func{System.String},System.Action{Hzdtf.Consul.Extensions.Common.ConsulOptions})">
+        <member name="M:Hzdtf.Consul.Extensions.Common.ConsulRegisterUtil.CreateConsulClientRegister(Microsoft.Extensions.Hosting.IHostApplicationLifetime,System.String,System.Func{System.String,System.String[],System.String},System.Action{Hzdtf.Consul.Extensions.Common.ConsulOptions})">
             <summary>
             创建Consul客户端注册并根据选项进行配置
             </summary>
+            <param name="lifetime">生命周期</param>
             <param name="optionsJsonFile">选项配置JSON文件</param>
             <param name="getLocalServiceAddress">回调获取本地服务地址</param>
             <param name="config">回调选项配置</param>
             <returns>Consul客户端</returns>
         </member>
-        <member name="M:Hzdtf.Consul.Extensions.Common.ConsulRegisterUtil.CreateConsulClientRegister(Hzdtf.Consul.Extensions.Common.ConsulOptions,System.Func{System.String})">
+        <member name="M:Hzdtf.Consul.Extensions.Common.ConsulRegisterUtil.CreateConsulClientRegister(Hzdtf.Consul.Extensions.Common.ConsulOptions,Microsoft.Extensions.Hosting.IHostApplicationLifetime,System.Func{System.String,System.String[],System.String})">
             <summary>
             创建Consul客户端注册并根据选项进行配置
             </summary>
             <param name="options">选项配置</param>
+            <param name="lifetime">生命周期</param>
             <param name="getLocalServiceAddress">回调获取本地服务地址</param>
             <returns>Consul客户端</returns>
+        </member>
+        <member name="M:Hzdtf.Consul.Extensions.Common.ConsulRegisterUtil.CreateAgent(System.String,System.String,System.String[],System.String,Hzdtf.Consul.Extensions.Common.ServiceCheckOptions)">
+            <summary>
+            创建代理
+            </summary>
+            <param name="address">地址</param>
+            <param name="serviceId">服务ID，唯一</param>
+            <param name="tags">标签</param>
+            <param name="serviceName">服务名</param>
+            <param name="check">检测</param>
+            <returns>代理</returns>
         </member>
         <member name="T:Hzdtf.Consul.Extensions.Common.ConsulServiceProviderAgg">
             <summary>
@@ -191,6 +210,16 @@
         <member name="F:Hzdtf.Consul.Extensions.Common.ConsulServicesProvider.consulClient">
             <summary>
             Consul客户端
+            </summary>
+        </member>
+        <member name="E:Hzdtf.Consul.Extensions.Common.ConsulServicesProvider.GetAddressesed">
+            <summary>
+            获取到地址数组后事件
+            </summary>
+        </member>
+        <member name="E:Hzdtf.Consul.Extensions.Common.ConsulServicesProvider.GlobalGetAddressesed">
+            <summary>
+            全局获取到地址数组后事件
             </summary>
         </member>
         <member name="M:Hzdtf.Consul.Extensions.Common.ConsulServicesProvider.#ctor">

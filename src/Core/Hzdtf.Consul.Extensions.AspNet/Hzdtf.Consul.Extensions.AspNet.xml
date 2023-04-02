@@ -60,11 +60,13 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Microsoft.AspNetCore.Builder.ConsulRegisterMiddlewareExtensions.UseRegisterConsul(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+        <member name="M:Microsoft.AspNetCore.Builder.ConsulRegisterMiddlewareExtensions.UseRegisterConsul(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostApplicationLifetime,System.Func{System.String,System.String[],System.String})">
             <summary>
             使用服务注册Consul
             </summary>
             <param name="app">应用生成器</param>
+            <param name="lifetime">生命周期</param>
+            <param name="getLocalServiceAddress">获取本地服务地址回调</param>
             <returns>应用生成器</returns>
         </member>
         <member name="T:Hzdtf.Consul.Extensions.AspNet.UnityConsulOptions">

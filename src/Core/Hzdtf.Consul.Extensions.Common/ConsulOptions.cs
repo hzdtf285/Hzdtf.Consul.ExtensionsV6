@@ -86,4 +86,13 @@ namespace Hzdtf.Consul.Extensions.Common
             set;
         } = 10;
     }
+
+    /// <summary>
+    /// Consul选项配置Grpc
+    /// @ 黄振东
+    /// </summary>
+    public class ConsulOptionsGrpc : ConsulOptions
+    {
+
+    }
 }

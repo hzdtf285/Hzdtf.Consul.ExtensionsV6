@@ -323,14 +323,14 @@
           }
         }
       },
-      "NodaTime/3.1.8": {
+      "NodaTime/3.1.9": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "runtime": {
           "lib/net6.0/NodaTime.dll": {
-            "assemblyVersion": "3.1.8.0",
-            "fileVersion": "3.1.8.0"
+            "assemblyVersion": "3.1.9.0",
+            "fileVersion": "3.1.9.0"
           }
         }
       },
@@ -611,7 +611,7 @@
           "Microsoft.Extensions.DependencyModel": "6.0.0",
           "NPOI": "2.6.0",
           "Newtonsoft.Json": "13.0.3",
-          "NodaTime": "3.1.8",
+          "NodaTime": "3.1.9",
           "Snowflake.Core": "2.0.0",
           "AndroidXml": "1.1.24"
         },
@@ -895,12 +895,12 @@
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
     },
-    "NodaTime/3.1.8": {
+    "NodaTime/3.1.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HDLsLM2T5YHe6kuQg96CpQIPM+nmeji6KZ7M8zRU6SwODQeqqUB9jFx20MLy2D88Z7yAwxKBSYEls07nb7d0WA==",
-      "path": "nodatime/3.1.8",
-      "hashPath": "nodatime.3.1.8.nupkg.sha512"
+      "sha512": "sha512-EzjwDOtsETlXWBDE6qvTQqc3guP+9xrAOf9j1mHL++UD4VeZay+dbCPNnXyZhoQMkKAOZ/+hIOtz7STl0Rkknw==",
+      "path": "nodatime/3.1.9",
+      "hashPath": "nodatime.3.1.9.nupkg.sha512"
     },
     "NPOI/2.6.0": {
       "type": "package",

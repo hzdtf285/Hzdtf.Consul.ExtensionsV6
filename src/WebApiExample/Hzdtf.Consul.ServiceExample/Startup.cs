@@ -1,3 +1,4 @@
+using Hzdtf.Utility;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -18,6 +19,7 @@ namespace Hzdtf.Consul.ServiceExample
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            App.CurrConfig = configuration;
         }
 
         public IConfiguration Configuration { get; }
@@ -39,8 +41,9 @@ namespace Hzdtf.Consul.ServiceExample
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IHostApplicationLifetime lifetime)
         {
+            App.Instance = app.ApplicationServices;
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -52,7 +55,7 @@ namespace Hzdtf.Consul.ServiceExample
 
             app.UseAuthorization();
 
-            app.UseRegisterConsul();
+            app.UseRegisterConsul(lifetime);
 
             app.UseEndpoints(endpoints =>
             {

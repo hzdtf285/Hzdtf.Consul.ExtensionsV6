@@ -43,7 +43,7 @@ namespace Hzdtf.Consul.Extensions.Common
         /// </summary>
         /// <param name="state">状态</param>
         /// <returns>值</returns>
-        protected override string[] Refresh(object state)
+        public override string[] Refresh(object state)
         {
             if (state is string[])
             {

@@ -5,6 +5,7 @@ using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,6 +24,16 @@ namespace Hzdtf.Consul.Extensions.Common
         /// Consul客户端
         /// </summary>
         private readonly ConsulClient consulClient;
+
+        /// <summary>
+        /// 获取到地址数组后事件
+        /// </summary>
+        public event Action<string, string, string[]> GetAddressesed;
+
+        /// <summary>
+        /// 全局获取到地址数组后事件
+        /// </summary>
+        public static event Action<string, string, string[]> GlobalGetAddressesed;
 
         #endregion
 
@@ -96,7 +107,17 @@ namespace Hzdtf.Consul.Extensions.Common
 
             Console.WriteLine($"{DateTimeExtensions.Now.ToFullFixedDateTime()} 服务名:{serviceName},consol远程获取的地址列表:{addresses.ToJsonString()}");
 
-            return addresses.ToArray();
+            var adds = addresses.ToArray();
+            if (GetAddressesed != null)
+            {
+                GetAddressesed(serviceName, tag, adds);
+            }
+            if (GlobalGetAddressesed != null)
+            {
+                GlobalGetAddressesed(serviceName, tag, adds);
+            }
+
+            return adds;
         }
 
         #endregion

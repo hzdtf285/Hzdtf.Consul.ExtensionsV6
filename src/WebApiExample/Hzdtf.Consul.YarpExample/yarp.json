@@ -1,0 +1,42 @@
+{
+  "ReverseProxy": {
+    "Routes": {
+      "route1": {
+        "ClusterId": "ServiceExampleA",
+        "Match": {
+          "Path": "/a/api/{*any}"
+        }
+      },
+      "route2": {
+        "ClusterId": "ServiceExampleB",
+        "Match": {
+          "Path": "/b/api/{*any}"
+        }
+      }
+    },
+    "Clusters": {
+      "ServiceExampleA": {
+        "HealthCheck": {
+          "Active": {
+            "Enabled": "true",
+            "Interval": "00:00:10",
+            "Timeout": "00:00:10",
+            "Policy": "ConsecutiveFailures",
+            "Path": "/Health"
+          }
+        }
+      },
+      "ServiceExampleB": {
+        "HealthCheck": {
+          "Active": {
+            "Enabled": "true",
+            "Interval": "00:00:10",
+            "Timeout": "00:00:10",
+            "Policy": "ConsecutiveFailures",
+            "Path": "/Health"
+          }
+        }
+      }
+    }
+  }
+}

@@ -33,8 +33,8 @@ namespace Hzdtf.Consul.WebClientExample
             });
 
 
-            //  services.AddDiscoveryConsul();
-            services.AddDiscoveryConsulConfigCenter();
+            services.AddDiscoveryConsul();
+            //services.AddDiscoveryConsulConfigCenter();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

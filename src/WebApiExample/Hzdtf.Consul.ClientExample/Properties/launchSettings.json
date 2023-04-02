@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Hzdtf.Consul.ClientExample": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:53458;http://localhost:53462"
+    }
+  }
+}

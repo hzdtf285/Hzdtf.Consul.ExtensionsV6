@@ -22,7 +22,7 @@ namespace Hzdtf.Consul.GRpc.ServiceExample
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.AddConsulConfigCenter(); // 如果不需要配置中心动态更新配置，则去掉此句
+                    webBuilder.AddConsulConfigCenter("Config/consulConfigGRpc.json"); // 如果不需要配置中心动态更新配置，则去掉此句
                 });
     }
 }

@@ -49,7 +49,7 @@
             添加GRpc注册Consul
             </summary>
             <param name="services">服务</param>
-            <param name="configJsonFilePath">配置JSON文件路径。如果传入为null，则默认为Config/consulConfig.json</param>
+            <param name="configJsonFilePath">配置JSON文件路径。如果传入为null，则默认为Config/consulConfigGRpc.json</param>
             <returns>服务</returns>
         </member>
         <member name="T:Microsoft.AspNetCore.Builder.ConsulGRpcRegisterMiddlewareExtensions">
@@ -58,11 +58,13 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="M:Microsoft.AspNetCore.Builder.ConsulGRpcRegisterMiddlewareExtensions.UseGRpcRegisterConsul(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+        <member name="M:Microsoft.AspNetCore.Builder.ConsulGRpcRegisterMiddlewareExtensions.UseGRpcRegisterConsul(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostApplicationLifetime,System.Func{System.String,System.String[],System.String})">
             <summary>
             使用GRpc注册Consul
             </summary>
             <param name="app">应用生成器</param>
+            <param name="lifetime">生命周期</param>
+            <param name="getLocalServiceAddress">获取本地服务地址回调</param>
             <returns>应用生成器</returns>
         </member>
         <member name="M:Microsoft.AspNetCore.Builder.ConsulGRpcRegisterMiddlewareExtensions.UseGRpcRoute(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)">
